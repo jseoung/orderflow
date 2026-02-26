@@ -1,0 +1,13 @@
+{
+  "name": "orderflow-mvp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "start:backend": "npm --prefix backend start",
+    "test": "cd tests && node --experimental-vm-modules ../backend/node_modules/.bin/jest calculations.test.js --rootDir=. 2>/dev/null || npx jest tests/calculations.test.js",
+    "install:test-deps": "npm install --save-dev jest"
+  }
+}
